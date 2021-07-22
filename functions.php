@@ -64,7 +64,7 @@ function gePhotos(){
         // echo '<pre>';
         // var_dump($photos);
         // echo '</pre>';
-        }
+    }
          
          
          
@@ -133,7 +133,7 @@ function getCategory(){
 }
     
 function fileExt($url){
-    $ext = pathinfo(
+    $ext = pathinfo(    
         parse_url($url, PHP_URL_PATH), 
         PATHINFO_EXTENSION
     );
@@ -145,7 +145,6 @@ function fileExt($url){
         return false;
     }
 }
-
 
 
 function getPhotoByTerms(){
